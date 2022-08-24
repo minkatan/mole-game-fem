@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed The Mole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-cover w-full h-full cursor-bird" style="background-image: url(./assets/background.png);">
+   <main class="flex flex-col items-center">
+       <!-- win -->
+       <div id="win" class="absolute hidden">
+           <img src="./assets/win.png" alt="win">
+       </div>
+    <div class="w-[840px] h-36">
+        <div class="overflow-hidden" style="width: 0%;" id="worm">
+            <img src="./assets/worm.png" alt="worm" class="w-[840px]">
+        </div>
+    </div>
+    <div id="hole-container" class="grid grid-cols-4 gap-12 w-[840px] h-[720px]">
+        <div class="rounded-full bg-stone-700 place-self-center hungry" id="hole-0">
+            <div class="bg-stone-700 rounded-full hidden h-36 w-36"></div>
+            <img data-index="0" src="./assets/king-mole-hungry.png" alt="mole" class="bg-stone-700 rounded-full">
+        </div>
+        <div class="rounded-full bg-stone-700 place-self-center hungry" id="hole-1">
+            <div class="bg-stone-700 rounded-full hidden h-36 w-36"></div>
+            <img data-index="1" src="./assets/king-mole-hungry.png" alt="mole" class="bg-stone-700 rounded-full">
+        </div>
+        <div class="rounded-full bg-stone-700 place-self-center hungry" id="hole-2">
+            <div class="bg-stone-700 rounded-full hidden h-36 w-36"></div>
+            <img data-index="2" src="./assets/king-mole-hungry.png" alt="mole" class="bg-stone-700 rounded-full">
+        </div>
+        <div class="rounded-full bg-stone-700 place-self-center hungry" id="hole-3">
+            <div class="bg-stone-700 rounded-full hidden h-36 w-36"></div>
+            <img data-index="3" src="./assets/king-mole-hungry.png" alt="mole" class="bg-stone-700 rounded-full">
+        </div>
+        <div class="rounded-full bg-stone-700 place-self-center hungry" id="hole-4">
+            <div class="bg-stone-700 rounded-full hidden h-36 w-36"></div>
+            <img data-index="4" src="./assets/king-mole-hungry.png" alt="mole" class="bg-stone-700 rounded-full">
+        </div>
+        <div class="rounded-full bg-stone-700 place-self-center hungry" id="hole-5">
+            <div class="bg-stone-700 rounded-full hidden h-36 w-36"></div>
+            <img data-index="5" src="./assets/king-mole-hungry.png" alt="mole" class="bg-stone-700 rounded-full">
+        </div>
+        <div class="rounded-full bg-stone-700 place-self-center hungry" id="hole-6">
+            <div class="bg-stone-700 rounded-full hidden h-36 w-36"></div>
+            <img data-index="6" src="./assets/king-mole-sad.png" alt="mole" class="bg-stone-700 rounded-full">
+        </div>
+        <div class="rounded-full bg-stone-700 place-self-center hungry" id="hole-7">
+            <div class="bg-stone-700 rounded-full hidden h-36 w-36"></div>
+            <img data-index="7" src="./assets/king-mole-leaving.png" alt="mole" class="bg-stone-70 rounded-full">
+        </div>
+        <div class="rounded-full bg-stone-700 place-self-center hungry" id="hole-8">
+            <div class="bg-stone-700 rounded-full hidden h-36 w-36"></div>
+            <img data-index="8" src="./assets/king-mole-hungry.png" alt="mole" class="bg-stone-700 rounded-full">
+        </div>
+        <div class="rounded-full bg-stone-700 place-self-center hungry" id="hole-9">
+            <div class="bg-stone-700 rounded-full hidden h-36 w-36"></div>
+            <img data-index="9" src="./assets/king-mole-fed.png" alt="mole" class="bg-stone-700 rounded-full">
+        </div>
+        <div class="rounded-full bg-stone-700 place-self-center hungry" id="hole-10">
+            <div class="bg-stone-700 rounded-full hidden h-36 w-36"></div>
+            <img data-index="10" src="./assets/king-mole-hungry.png" alt="mole" class="bg-stone-700 rounded-full">
+        </div>
+        <div class="rounded-full bg-stone-700 place-self-center hungry" id="hole-11">
+            <div class="bg-stone-700 rounded-full hidden h-36 w-36"></div>
+            <img data-index="11" src="./assets/king-mole-hungry.png" alt="mole" class="bg-stone-700 rounded-full">
+        </div>
+    </div>
+   </main> 
+   <script src="./app.js"></script>
+</body>
+</html>
